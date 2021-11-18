@@ -2,7 +2,6 @@ function randomDiffMessages(num) {
     const random= Math.floor(Math.random() * num)
 }
 
-
 const collectiveWisdom = {
     signInfo : ['Moon', 'Stars', 'Comet', 'Sky'],
     fortuneOutput : ['terrible luck', 'bad luck', 'ok luck', 'good luck', 'great luck'],
@@ -13,7 +12,6 @@ const personalWisdom = []
 
 for(let prop in collectiveWisdom) {
     const index = randomDiffMessages(collectiveWisdom[prop].length)
-
     switch (prop) {
         case 'signInfo':
             personalWisdom.push(`Your sign is ${collectiveWisdom[prop][index]}`)
